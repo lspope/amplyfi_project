@@ -65,7 +65,7 @@ if(st.button("Search by Source")):
 ##
 entities_types = np.array(["PERSON", "NORP", "FAC", "ORG", "GPE", "LOC", "PRODUCT", "EVENT", "LAW"])
 entities_option = st.selectbox("Select Entity Type:", entities_types)
-desired_entity_text = st.text_input("Desired Entity Text")
+desired_entity_text = st.text_input("Enter Entity Text")
 if(st.button("Search by Entity")):
     mongo_docs_by_entity = mongoActions.get_articles_by_entity(entities_option, desired_entity_text, for_dataframe=False)
 
@@ -97,7 +97,7 @@ if(st.button("Search by Entity")):
 ##
 # Display article details and contents
 ##
-desired_id = st.text_input("Desired Article ID")
+desired_id = st.text_input("Enter Article ID")
 if(st.button("Display Article")):
     mongo_docs_by_id = mongoActions.get_article_by_id(desired_id, for_dataframe=False)
     

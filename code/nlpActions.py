@@ -9,11 +9,11 @@ from collections import Counter
 target_entity_labels = ["PERSON", "NORP", "FAC", "ORG", "GPE", "LOC", "PRODUCT", "EVENT", "LAW"]
    
 #Spacy nlp pipeline with only parts needed for NER
-nlp_ner_only = spacy.load("en_core_web_trf")
+nlp_ner_only = spacy.load("en_core_web_md")
 nlp_ner_only.remove_pipe("parser")
 
 #Spacy nlp pipeline without the NER
-nlp_no_ner = spacy.load("en_core_web_trf")
+nlp_no_ner = spacy.load("en_core_web_md")
 nlp_no_ner.remove_pipe("ner")
 nlp_no_ner.Defaults.stop_words.add("\n")
 

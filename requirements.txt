@@ -20,7 +20,6 @@ commonmark==0.9.1
 cycler
 cymem==2.0.6
 debugpy
-decorato
 defusedxml
 dill
 dnspython==2.2.1

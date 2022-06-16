@@ -1,6 +1,6 @@
 altair==4.2.0
-argon2-cffi @ file:///home/conda/feedstock_root/build_artifacts/argon2-cffi_1636021379509/work
-astroid @ file:///home/conda/feedstock_root/build_artifacts/astroid_1655142261672/work
+argon2-cffi
+astroid
 async-generator==1.10
 attrs @ file:///home/conda/feedstock_root/build_artifacts/attrs_1620387926260/work
 autograd==1.3
